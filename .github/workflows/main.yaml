@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Prepare blog for dev.to publish
+        run: node scripts/devto.js
       - name: Publish articles on dev.to
         uses: sinedied/publish-devto@v2
         with:
