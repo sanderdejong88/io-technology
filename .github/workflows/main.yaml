@@ -11,6 +11,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Setup NodeJs 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: "16.x"
+      - name: Cache dependencies and build outputs to improve workflow execution time.
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('package-lock.json') }}
+      - name: Install dependencies
+        run: npm ci
       - name: Prepare blog for dev.to publish
         run: node scripts/devto.js
       - name: Publish articles on dev.to
