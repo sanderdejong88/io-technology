@@ -30,6 +30,8 @@ const walk = function (dir, done) {
 
 const fixImagePaths = (path) =>
   path.replaceAll('/articles/', 'https://techhub.iodigital.com/articles/')
+const fixImagePathsInContent = (path) =>
+  path.replaceAll('(/articles/', '(https://techhub.iodigital.com/articles/')
 
 walk(srcDir, function (err, results) {
   if (err) throw err
@@ -51,7 +53,7 @@ walk(srcDir, function (err, results) {
       frontmatter.images = frontmatter.images.map((img) => fixImagePaths(img))
     }
 
-    content = fixImagePaths(content)
+    content = fixImagePathsInContent(content)
 
     const distFile = file.replace(srcDir, destDir)
     const newFileContent = matter.stringify(content, frontmatter)
