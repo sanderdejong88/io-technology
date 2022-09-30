@@ -34,12 +34,17 @@ const fixImagePaths = (path) =>
 walk(srcDir, function (err, results) {
   if (err) throw err
 
+  const MAX_COPIED = 2
+  let count = 0
+
   results.forEach((file) => {
     const source = fs.readFileSync(file, 'utf8')
     let { data: frontmatter, content } = matter(source)
 
     if (frontmatter.canonicalUrl) return
     if (frontmatter.draft) return
+    if (count >= MAX_COPIED) return
+    count += 1
 
     frontmatter.title = frontmatter.title.replaceAll('_', '')
     if (frontmatter.images) {
@@ -52,5 +57,6 @@ walk(srcDir, function (err, results) {
     const newFileContent = matter.stringify(content, frontmatter)
 
     fs.outputFileSync(distFile, newFileContent)
+    console.log(`Copied ${distFile}`)
   })
 })
