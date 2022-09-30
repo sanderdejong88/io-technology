@@ -4,7 +4,7 @@ date: '2022-08-23'
 tags: ['infrastructure']
 images:
   [
-    '/articles/dockerfile-templating-to-automate-image-creation/dockerfile-templating-steps-transparent.png',
+    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/dockerfile-templating-to-automate-image-creation/dockerfile-templating-steps-transparent.png',
   ]
 summary: "If we take a look at the repository for the official Node.js Docker images we can see that the source contains a Dockerfile for each image variant. Imagine having to add a package to all of these images. That's a lot of manual edits, but it's manageable. Now imagine adding a package to only specific versions of the image and a different package depending on the Linux distro."
 authors: ['luud-janssen']
@@ -37,7 +37,7 @@ The generation process consists of three steps:
 2. Generating an output file that lists all generated Dockerfiles
 3. Building and publishing all the generated Dockerfiles using Jenkins
 
-![Dockerfile templating steps](/articles/dockerfile-templating-to-automate-image-creation/dockerfile-templating-steps-transparent.png)
+![Dockerfile templating steps](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/dockerfile-templating-to-automate-image-creation/dockerfile-templating-steps-transparent.png)
 
 I'll first talk about compiling the dockerfiles and generating the output file in Node.js and then we'll make a switch to building the images with Jenkins.
 

@@ -2,7 +2,10 @@
 title: 'How do I setup _CI/CD & hosting?_'
 date: '2022-09-07'
 tags: ['frontend']
-images: ['/articles/how-do-i-build-a-component-library/ci-cd-hosting/ci-cd-hosting.png']
+images:
+  [
+    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/ci-cd-hosting/ci-cd-hosting.png',
+  ]
 summary: 'How to build a component library Part 4: Setting up CI/CD & hosting.'
 authors: ['dave-bitter']
 theme: 'orange'
@@ -62,11 +65,11 @@ First, give your workflow a sensible name. In this case, as you are going to cre
 
 Now if you make a pull request and push it to the demo repository, it will run these steps:
 
-![Screenshot of all steps being executed on GitHub](/articles/how-do-i-build-a-component-library/ci-cd-hosting/pull-request-action.png)
+![Screenshot of all steps being executed on GitHub](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/ci-cd-hosting/pull-request-action.png)
 
 In the pull request overview, you can see the action being executed as well as a mandatory step before you can merge:
 
-![Screenshot of pull request overview where you can see the actions being required to merge](/articles/how-do-i-build-a-component-library/ci-cd-hosting/pull-request.png)
+![Screenshot of pull request overview where you can see the actions being required to merge](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/ci-cd-hosting/pull-request.png)
 
 ## How do I publish to a private package registry?
 

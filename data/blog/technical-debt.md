@@ -2,7 +2,10 @@
 title: 'Introducing technical debt'
 date: '2022-07-28'
 tags: ['development', 'code-quality']
-images: ['/articles/technical-debt/technical-debt.jpg']
+images:
+  [
+    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/technical-debt/technical-debt.jpg',
+  ]
 summary: 'Are you tired of seeing good websites go to waste? Do you want to keep your codebase clean, but you have no idea where to start? Ever wondered how a small change request or simple bugfix turned into an endless game of whack-a-mole? Monitoring technical debt can provide a way out.'
 authors: ['niels-matthijs']
 theme: 'orange'
@@ -10,7 +13,7 @@ theme: 'orange'
 
 There are many holy grails in the web development community, but one of our boldest challenges is building websites that _increase_ in quality over time. Too many projects have inexcusably short lifespans, as neither clients nor developers find themselves able to deal with the scrambled chaos websites inevitably become. Despite everybody's best intentions, websites are often on life support by the time they are effectively launched, which is a far stretch from the quality we aspire to deliver.
 
-The good news is that influential people are starting to notice the absurdity of this situation, and slowly ideas and concepts are emerging that will help our industry take the necessary steps forward. Not too long ago I spotted a mention of [The Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) in an article on design systems, the rise of headless setups is helping us deal with architectural challenges and our own Dave Bitter wrote a very insightful article on some of the [most common causes for code corruption](https://techhub.iodigital.com/articles/the-infinite-legacy-cycle-in-front-end).
+The good news is that influential people are starting to notice the absurdity of this situation, and slowly ideas and concepts are emerging that will help our industry take the necessary steps forward. Not too long ago I spotted a mention of [The Ship of Theseus](https://en.wikipedia.org/wiki/Ship_of_Theseus) in an article on design systems, the rise of headless setups is helping us deal with architectural challenges and our own Dave Bitter wrote a very insightful article on some of the [most common causes for code corruption](https://techhub.iodigital.comhttps://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-infinite-legacy-cycle-in-front-end).
 
 Workflow improvements are essential and being aware of possible pitfalls is certainly a great help, but when reality hits, they will not safeguard our projects from imperfections and the inevitable decay. That's where the concept of technical debt comes into play. Technical debt won't necessarily prevent bad code, but it does help you deal with it.
 

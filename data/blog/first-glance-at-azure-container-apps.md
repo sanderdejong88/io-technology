@@ -2,7 +2,10 @@
 title: 'A First Glance at Azure Container Apps'
 date: '2022-09-01'
 tags: ['azure', 'devops', 'docker']
-images: ['/articles/first-glance-at-azure-container-apps/containerapps.png']
+images:
+  [
+    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/first-glance-at-azure-container-apps/containerapps.png',
+  ]
 summary: 'Azure recently launched Container Apps, Somewhere in the funtion-middle between Container Instances and Kubernetes Services lives this new resource type. This is a journal of a first gance on it.'
 authors: ['owin-gruters']
 theme: 'blue'
@@ -19,7 +22,7 @@ After I did a simple tutorial with a frontend UI app + an API app and how to con
 
 In the Azure portal I noticed it is very easy to hookup other Azure services as a 'service connection', which is in preview, but looks very promising (see screenshot with services that can be connected).
 
-![The image shows a list of all service connection available from Container Apps.](/articles/first-glance-at-azure-container-apps/serviceconnections.png)
+![The image shows a list of all service connection available from Container Apps.](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/first-glance-at-azure-container-apps/serviceconnections.png)
 
 ## NO azure managed certificates (yet)!
 

@@ -2,7 +2,10 @@
 title: 'VueJS conference Amsterdam 2022'
 date: '2022-06-07'
 tags: ['frontend', 'vue', 'conference']
-images: ['/articles/vue-js-conference-amsterdam-2022/group.jpeg']
+images:
+  [
+    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/vue-js-conference-amsterdam-2022/group.jpeg',
+  ]
 summary: "Together with some colleagues I’ve attended the VueJS conference in Amsterdam. It was nice to meet colleagues from other campuses and having a chance to get to know them in a different setting. The conference itself was a little underwhelming, but that doesn't mean I went home without some valuable takeaways."
 authors: ['thijs-busser']
 theme: 'black'
