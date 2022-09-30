@@ -2,10 +2,7 @@
 title: 'Using best practices to create CSS scroll snapping tabs'
 date: '2022-03-31'
 tags: ['frontend', 'css', 'a11y']
-images:
-  [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/using-best-practices-to-create-css-scroll-snapping-tabs/snapping.jpg',
-  ]
+images: ['/articles/using-best-practices-to-create-css-scroll-snapping-tabs/snapping.jpg']
 summary: 'How should scroll snapping tabs behave when using keys? By reading some best practices, I believe I found an elegant solution.'
 authors: ['brecht-de-ruyte']
 theme: 'orange'
@@ -90,7 +87,7 @@ Here is the basic **CSS** for this:
 }
 ```
 
-![Scroll snapping css demo](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/using-best-practices-to-create-css-scroll-snapping-tabs/scroll-snapping-css-example.png)
+![Scroll snapping css demo](/articles/using-best-practices-to-create-css-scroll-snapping-tabs/scroll-snapping-css-example.png)
 
 ([codepen for the first step here](https://codepen.io/utilitybend/pen/JjMrjea))
 
@@ -253,4 +250,4 @@ By adding [a bit of JS from the ARIA working group](https://www.w3.org/TR/wai-ar
 
 [The final example](https://codepen.io/utilitybend/pen/poWWaRv), with kudos to people who create examples in the ARIA working group.
 
-![Accessible scroll snapping tabs](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/using-best-practices-to-create-css-scroll-snapping-tabs/accessible-scroll-snapping-tabs.png)
+![Accessible scroll snapping tabs](/articles/using-best-practices-to-create-css-scroll-snapping-tabs/accessible-scroll-snapping-tabs.png)

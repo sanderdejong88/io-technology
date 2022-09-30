@@ -2,10 +2,7 @@
 title: 'The future of page transitions with Shared Element Transitions'
 date: '2022-06-23'
 tags: ['frontend', 'css', 'js']
-images:
-  [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-future-of-page-transitions-with-shared-element-transitions/header.jpg',
-  ]
+images: ['/articles/the-future-of-page-transitions-with-shared-element-transitions/header.jpg']
 summary: 'The Shared Element Transitions API allows creating page transitions using a browser API that can provide users with a better visual connection between page-a and page-b by transitioning shared elements on both pages.'
 authors: ['milan-vogels']
 theme: 'orange'
@@ -57,7 +54,7 @@ async function navigate() {
 
 The default transition the API creates is a simple fade. I created a small CodePen example that just toggles between a card view and a detail view by toggling the display style.
 
-![An example of a basic root transition](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-1.gif)
+![An example of a basic root transition](/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-1.gif)
 
 <small>Source available on https://codepen.io/milanvogels/pen/ZErNQdr</small>
 
@@ -93,7 +90,7 @@ For example, we can change the animation to a _slide out_:
 }
 ```
 
-![An example of a slide out root transition](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-2.gif)
+![An example of a slide out root transition](/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-2.gif)
 
 <small>Source available on https://codepen.io/milanvogels/pen/wvybGOy</small>
 
@@ -113,7 +110,7 @@ In the following example, we add a `page-transition-tag: article-img` to an imag
 
 This gives us an already pretty cool effect.
 
-![An example of a shared element transition, animating a small card-image into a large article-image](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-3.gif)
+![An example of a shared element transition, animating a small card-image into a large article-image](/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-3.gif)
 
 <small>Source available on https://codepen.io/milanvogels/pen/ZErNOBz</small>
 
@@ -153,7 +150,7 @@ async function navigate() {
 
 Here's an example of a full grid of cards animating each card's image to the full article image. It still shows the singular article detail view we created, hence the detail image doesn't reflect the card's image.
 
-![An example of a shared element transition, animating multiple small card-images in a grid into a large article-image](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-4.gif)
+![An example of a shared element transition, animating multiple small card-images in a grid into a large article-image](/articles/the-future-of-page-transitions-with-shared-element-transitions/codepen-4.gif)
 
 <small>Source available on https://codepen.io/milanvogels/pen/PoQvdEM</small>
 

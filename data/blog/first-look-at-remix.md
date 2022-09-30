@@ -2,14 +2,11 @@
 title: 'First look at Remix'
 date: '2021-12-08'
 tags: ['frontend', 'react', 'remix']
-images:
-  [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/first-look-at-remix/remix.jpg',
-  ]
+images: ['/articles/first-look-at-remix/remix.jpg']
 summary: 'There has been a lot of buzz around the open-source release of Remix. I took a first look by following the deep-dive tutorial and this is what I found.'
 authors: ['dave-bitter']
 theme: 'orange'
-canonicalUrl: 'https://www.davebitter.comhttps://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/first-look-at-remix'
+canonicalUrl: 'https://www.davebitter.com/articles/first-look-at-remix'
 ---
 
 [Remix](https://remix.run) is a full-stack web framework that lets you focus on the user interface and work back through web fundamentals to deliver a fast, slick, and resilient user experience. This is what excited me when I first read about Remix. I'm a big advocate for progressively enhancing web applications and this framework seems to take this approach by simply using web fundamentals.
@@ -18,7 +15,7 @@ This is not a step-by-step guide on how to make a web application with Remix, bu
 
 ## Routing mechanism
 
-Like Next.js, Remix uses a file-based routing system. In `/app` (where your app will live) you can create a folder called `routes`. Every file you add (e.g. `/app/routes/example` will create a route and page under `http://website.com/example`. If you're unfamiliar with this concept, please read my article on my personal blog [A simple, yet detailed introduction to Next.js](https://www.davebitter.comhttps://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/a-simple-yet-detailled-introduction-to-next-js). Next.js and Remix work nearly the same with some exceptions like creating a dynamic page (`[slug]` vs. `$slug`. If this is not the way you want to work, you can also define your routes in an object for both of these frameworks.
+Like Next.js, Remix uses a file-based routing system. In `/app` (where your app will live) you can create a folder called `routes`. Every file you add (e.g. `/app/routes/example` will create a route and page under `http://website.com/example`. If you're unfamiliar with this concept, please read my article on my personal blog [A simple, yet detailed introduction to Next.js](https://www.davebitter.com/articles/a-simple-yet-detailled-introduction-to-next-js). Next.js and Remix work nearly the same with some exceptions like creating a dynamic page (`[slug]` vs. `$slug`. If this is not the way you want to work, you can also define your routes in an object for both of these frameworks.
 
 ### Nested routes
 
@@ -46,7 +43,7 @@ This concept is fundamental to how Remix works. You can read more about nested r
 
 ## Server- and client-side code
 
-We've seen great strides by Next.js to make it easy for developers to expose server-side functions right next to client-side code. You can read more about that in my article [Next.js page generation](https://www.davebitter.comhttps://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/next-js-page-generation). At a first glance, Remix has an evenly convenient, if not better solution. I feel like Remix takes it to the next level by fully focussing on not having to use client-side JS as a standard, but rather an afterthought.
+We've seen great strides by Next.js to make it easy for developers to expose server-side functions right next to client-side code. You can read more about that in my article [Next.js page generation](https://www.davebitter.com/articles/next-js-page-generation). At a first glance, Remix has an evenly convenient, if not better solution. I feel like Remix takes it to the next level by fully focussing on not having to use client-side JS as a standard, but rather an afterthought.
 
 ### Loaders
 

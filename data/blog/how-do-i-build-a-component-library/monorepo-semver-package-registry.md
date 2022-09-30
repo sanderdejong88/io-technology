@@ -4,7 +4,7 @@ date: '2022-08-17'
 tags: ['frontend']
 images:
   [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/monorepo-semver-package-registry.png',
+    '/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/monorepo-semver-package-registry.png',
   ]
 summary: 'How to build a component library Part 1: Setting up a Monorepo, Semver strategy and Private package registry.'
 authors: ['dave-bitter']
@@ -109,19 +109,19 @@ Great, we can now run a few commands.
 
 `yarn changeset` will open up an interactive CLI tool that assists you in creating a changeset file that can be consumed. First, you select which packages you want to create a changeset for:
 
-![CLI interface to make a selection of which package to make a changeset for](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-select-packages.png)
+![CLI interface to make a selection of which package to make a changeset for](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-select-packages.png)
 
 Next, you have to select the correct SemVer bump:
 
-![CLI interface to make a selection of which SemVer to use](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-select-semver.png)
+![CLI interface to make a selection of which SemVer to use](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-select-semver.png)
 
 After that, you can add a summary of the change that will be used in the changelog. Note that it prompts you for a large summary as well if you are doing a major bump:
 
-![CLI interface to add a summary for the changes](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-add-summary.png)
+![CLI interface to add a summary for the changes](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-add-summary.png)
 
 Finally, it gives us a summary of the changeset:
 
-![CLI interface with summary of choices](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-summary.png)
+![CLI interface with summary of choices](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-summary.png)
 
 We can now go back to the `.changeset` folder in the root of the project. A new file called `eleven-hounds-prove.md` is automatically generated. Note that the name will change for every generated changeset.
 
@@ -145,7 +145,7 @@ Next, we want to consume this changeset file. You can run `yarn changeset versio
 
 Finally, we want to actually publish the updated packages. You can run `yarn changeset publish` to publish the separate packages to the registry we are setting up next.
 
-![CLI interface with publish logs](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-publish.png)
+![CLI interface with publish logs](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/changeset-publish.png)
 
 As you may notice in the image above is that Changeset creates tags for you as well.
 
@@ -157,7 +157,7 @@ Next, we want to publish these separate packages to a package registry. This doe
 
 Firstly, you need to generate a token on your GitHub. You can do this by going to [https://github.com/settings/tokens](https://github.com/settings/tokens). After hitting generate, make sure to tick the`write:packages`-box
 
-![GitHub settings page to create a new access token](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/github-token.png)
+![GitHub settings page to create a new access token](/articles/how-do-i-build-a-component-library/monorepo-semver-package-registry/github-token.png)
 
 Then click “generate token” at the bottom of the page and copy the generated token.
 

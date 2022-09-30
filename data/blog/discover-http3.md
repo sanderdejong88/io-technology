@@ -2,10 +2,7 @@
 title: 'Discover HTTP/3'
 date: '2022-07-05'
 tags: ['network']
-images:
-  [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/discover-http3/developerblog-http3imgs-3.jpg',
-  ]
+images: ['/articles/discover-http3/developerblog-http3imgs-3.jpg']
 summary: 'What is HTTP/3 and how does it differ from HTTP/2? In order to understand we need to dive deep into how the protocols of the internet work.'
 authors: ['lucien-immink']
 theme: 'blue'
@@ -23,11 +20,11 @@ The protocol allows intermediate networks to alter / extend / improve / open com
 
 HTTP is an application layer protocol as described in the [OSI model](https://en.wikipedia.org/wiki/OSI_model) and presumes an underlying network protocol like Internet Protocol(IP) and transport protocol Transmission Control Protocol (TCP), it can however be adopted to use other transport protocols like User Datagram Protocol (UDP).
 
-![Schema of the 7 layers of the OSI Model](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/discover-http3/developerblog-http3imgs-1.jpg)
+![Schema of the 7 layers of the OSI Model](/articles/discover-http3/developerblog-http3imgs-1.jpg)
 
 A HTTP resource is identified by the Uniform Resource Locators (URLs) which consists of following key elements:
 
-![Schema of the elements of a URL](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/discover-http3/developerblog-http3imgs-2.jpg)
+![Schema of the elements of a URL](/articles/discover-http3/developerblog-http3imgs-2.jpg)
 
 - (scheme)
 - (authority [= username@host:port])
@@ -38,7 +35,7 @@ A HTTP resource is identified by the Uniform Resource Locators (URLs) which cons
 Parts of the URL are optional and omitting them can have both positive and negative side-effects. For navigating between resources:
 
 - No scheme means that the resource requested should use the same scheme as the requestee. This can easily fix mixed-content errors. HTTPS stays HTTPS! (for example: //www.example.com)
-- No scheme and no authority means that the resource requested should be on the same domain, if the URL starts with a forward-slash (/) the requested resource is requested using the absolutepath otherwise it is relative to the requestee (https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/ vs articles/).
+- No scheme and no authority means that the resource requested should be on the same domain, if the URL starts with a forward-slash (/) the requested resource is requested using the absolutepath otherwise it is relative to the requestee (/articles/ vs articles/).
 - No scheme and no authority and no path indicate that the requested resource should be found in the same path as the requestee (for example: page2.html)
 
 While query and fragment won’t change what the requested resource is a query does alter the response. If sent, the query is used as a filter (or it should be 😉). The fragment is fully client side and was intended to be used as a bookmark so the page would scroll to a specific element in the HTML element. Because the fragment will not trigger a navigation event in the browser it was also used a lot for client-side navigation (known as [hashbang](https://en.wikipedia.org/wiki/URI_fragment#Proposals) note that that link uses a fragment).
@@ -68,7 +65,7 @@ As of December 2020, the HTTP/3 protocol is an internet draft and implementation
 
 The big change here is the use of QUIC as transport layer protocol instead of TCP. QUIC improves performance of web-based applications by establishing several multiplexed connections between server and client using UDP and is designed to replace TCP.
 
-![Zero RTT Connection Establishment](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/discover-http3/developerblog-http3imgs-3.jpg)
+![Zero RTT Connection Establishment](/articles/discover-http3/developerblog-http3imgs-3.jpg)
 
 Reading back HTTP/3 is HTTP/2 using a different transport protocol, so why is it called HTTP/3 then? At first it was named HTTP/2 Semantics Using The QUIC Transport Protocol and later renamed to HTTP over QUIC but to make clear that the protocol is separate from QUIC itself and thus should not have the QUIC in it, it was renamed to HTTP/3.
 

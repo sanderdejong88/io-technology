@@ -2,10 +2,7 @@
 title: 'How do I set up _linting_, _unit_, _snapshot_ and _visual regression testing_?'
 date: '2022-08-31'
 tags: ['frontend']
-images:
-  [
-    'https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/linting-testing/linting-testing.png',
-  ]
+images: ['/articles/how-do-i-build-a-component-library/linting-testing/linting-testing.png']
 summary: 'How to build a component library Part 3: Setting up linting, unit, snapshot and visual regression testing.'
 authors: ['dave-bitter']
 theme: 'orange'
@@ -322,7 +319,7 @@ You can help developers with this process using [Commitizen](https://github.com/
 
 This will then guide you through an interactive CLI:
 
-![Screenshot of questions the interactive CLI prompts with](https://raw.githubusercontent.com/sanderdejong88/io-technology/develop/public/articles/how-do-i-build-a-component-library/linting-testing/commitizen.png)
+![Screenshot of questions the interactive CLI prompts with](/articles/how-do-i-build-a-component-library/linting-testing/commitizen.png)
 
 ## Looking back
 
